@@ -184,6 +184,30 @@ while True:
 								print("tabligh forearedi pak shod")
 							except:
 								print("err delete forwared")
+								
+						elif msg.get("text").startswith("ربات") or msg.get("text").startswith("بات"):
+							try:
+								bot.sendMessage(target, "جــونـم😁💋", message_id=msg.get("message_id"))
+							except:
+								print("err bot answer")
+						
+						elif msg.get("text").startswith("😂") or msg.get("text").startswith("🤣"):
+							try:
+								bot.sendMessage(target, "جــون تـو فــقط بخـند😍", message_id=msg.get("message_id"))
+							except:
+								print("err luagh")
+								
+						elif msg.get("text").startswith("فاطی") or msg.get("text").startswith("فاتی"):
+							try:
+								bot.sendMessage(target, "عمت کرده قاطی😈😂", message_id=msg.get("message_id"))
+							except:
+								print("err luagh")
+								
+						elif msg.get("text").startswith("دیوث") or msg.get("text").startswith("دیوص") or msg.get("text").startswith("دیوس"):
+							try:
+								bot.sendMessage(target, "دولاشو سرشو ببوس نخاستی کونمو ببوس❤💖😂", message_id=msg.get("message_id"))
+							except:
+								print("err answer hello")		
 						
 						elif msg.get("text") == "قوانین":
 							try:
