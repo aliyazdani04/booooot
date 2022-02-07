@@ -50,13 +50,11 @@ def alert(guid,user,link=False):
 	if link : haslink = "گزاشتن لینک در گروه ممنوع میباشد .\n"
 
 	if coun == 1:
-		bot.sendMessage(target, "💢 اخطار [ @"+user+" ] \n"+haslink+" شما (1/3) اخطار دریافت کرده اید .")
-	elif coun == 2:
-		bot.sendMessage(target, "💢 اخطار [ @"+user+" ] \n"+haslink+" شما (2/3) اخطار دریافت کرده اید  .")
+		bot.sendMessage(target, "💢 اخطار [ @"+user+" ] \n"+haslink+" شما (1/2) اخطار دریافت کرده اید .")
 
-	elif coun == 3:
+	elif coun == 2:
 		blacklist.append(guid)
-		bot.sendMessage(target, "🚫 کاربر [ @"+user+" ] \n (3/3) اخطار دریافت کرد ، .")
+		bot.sendMessage(target, "🚫 کاربر [ @"+user+" ] \n (2/2) اخطار دریافت کرد ، .")
 		bot.banGroupMember(target, guid)
 
 
