@@ -53,9 +53,8 @@ def alert(guid,user,link=False):
 		bot.sendMessage(target, "💢 اخطار [ @"+user+" ] \n"+haslink+" شما (1/2) اخطار دریافت کرده اید .")
 
 	elif coun == 2:
-		blacklist.append(guid)
 		bot.sendMessage(target, "🚫 کاربر [ @"+user+" ] \n (2/2) اخطار دریافت کرد ، .")
-		bot.banGroupMember(target, guid)
+		
 
 
 while True:
